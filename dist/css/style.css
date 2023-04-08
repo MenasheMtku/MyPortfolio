@@ -1,0 +1,128 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  overflow: hidden; }
+
+.action-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.action-btn {
+  color: #eeeeee;
+  background-color: #222831;
+  letter-spacing: 1.4px;
+  font-size: 1.2rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 2rem 0; }
+
+.my-3 {
+  margin: 3rem 0; }
+
+.my-4 {
+  margin: 4rem 0; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-padding: var(--scroll-padding, 5rem); }
+
+body {
+  background: #00adb5;
+  color: #000;
+  font-family: "League Spartan", sans-serif;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  height: 100vh;
+  width: 100%; }
+  header #main-nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    align-items: baseline;
+    background: #222831; }
+    header #main-nav .logo {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+      padding-left: 3.5rem; }
+    header #main-nav ul {
+      display: flex;
+      justify-content: space-between; }
+    header #main-nav a {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #eeeeee;
+      padding: 1rem 1.5rem;
+      transition: all 0.5s ease-out; }
+      header #main-nav a:hover {
+        color: #00adb5;
+        border-bottom: 2px solid #00adb5; }
+  header .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+    header .hero .hero-text {
+      display: grid;
+      grid-template-columns: 3fr 1fr; }
+      header .hero .hero-text .lead-1 {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px; }
+      header .hero .hero-text .lead-2 {
+        font-size: 5.5rem;
+        font-weight: 600; }
+      header .hero .hero-text .lead-3 {
+        font-size: 2rem; }
+      header .hero .hero-text .button-container {
+        display: inline-block; }
+        header .hero .hero-text .button-container .btn {
+          margin-top: 4.5rem; }
+      header .hero .hero-text img {
+        border-radius: 0.3cm;
+        height: 320px;
+        width: 320px; }
+
+main section {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 4rem; }

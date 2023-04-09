@@ -14,9 +14,8 @@
     />
   </head>
   <body>
-    <header>
-      <nav id="main-nav" class="navbar">
-        <!-- <div class="container"> -->
+    <nav id="main-nav" class="navbar">
+      <div class="container">
         <h3 class="logo">TMZGN</h3>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -24,16 +23,16 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <!-- </div> -->
-      </nav>
-
+      </div>
+    </nav>
+    <header>
       <div class="hero" id="home">
         <div class="container">
           <div class="hero-text">
             <div class="presentation">
               <p class="lead-1">Hi, I'm Menashe Mtku</p>
               <!-- <h2 class="lead-2">Menashe Mtku</h2> -->
-              <p class="lead-2">I'm A Web Developer</p>
+              <p class="lead-2">A Web Developer</p>
               <p class="lead-3">
                 I Specialize In Web Development For Freelancers And Buisnesses.
               </p>
@@ -51,62 +50,68 @@
 
     <main>
       <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm John! I'm a web developer with experience in HTML, CSS,
-          JavaScript, and PHP. I love creating beautiful, responsive websites
-          that are both functional and user-friendly. When I'm not coding, you
-          can find me playing video games or hiking in the mountains.
-        </p>
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm John! I'm a web developer with experience in HTML, CSS,
+            JavaScript, and PHP. I love creating beautiful, responsive websites
+            that are both functional and user-friendly. When I'm not coding, you
+            can find me playing video games or hiking in the mountains.
+          </p>
+        </div>
       </section>
 
       <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <img src="project1.jpg" alt="Project 1" />
-          <h3>Project 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            hendrerit enim ac urna accumsan, eget molestie est feugiat.
-          </p>
-          <a href="#">View Project</a>
-        </div>
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project">
+            <img src="project1.jpg" alt="Project 1" />
+            <h3>Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              hendrerit enim ac urna accumsan, eget molestie est feugiat.
+            </p>
+            <a href="#">View Project</a>
+          </div>
 
-        <div class="project">
-          <img src="project2.jpg" alt="Project 2" />
-          <h3>Project 2</h3>
-          <p>
-            Ut tincidunt tellus ac ex hendrerit, eget blandit sapien auctor.
-            Aenean faucibus tellus vel justo placerat gravida.
-          </p>
-          <a href="#">View Project</a>
-        </div>
+          <div class="project">
+            <img src="project2.jpg" alt="Project 2" />
+            <h3>Project 2</h3>
+            <p>
+              Ut tincidunt tellus ac ex hendrerit, eget blandit sapien auctor.
+              Aenean faucibus tellus vel justo placerat gravida.
+            </p>
+            <a href="#">View Project</a>
+          </div>
 
-        <div class="project">
-          <img src="project3.jpg" alt="Project 3" />
-          <h3>Project 3</h3>
-          <p>
-            Mauris accumsan felis eget nisl mollis, sit amet feugiat quam
-            facilisis. Nullam malesuada justo quis lectus tincidunt ultrices.
-          </p>
-          <a href="#">View Project</a>
+          <div class="project">
+            <img src="project3.jpg" alt="Project 3" />
+            <h3>Project 3</h3>
+            <p>
+              Mauris accumsan felis eget nisl mollis, sit amet feugiat quam
+              facilisis. Nullam malesuada justo quis lectus tincidunt ultrices.
+            </p>
+            <a href="#">View Project</a>
+          </div>
         </div>
       </section>
 
       <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-          <input type="submit" value="Send" />
-        </form>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
       </section>
     </main>
 

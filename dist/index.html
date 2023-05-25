@@ -1,165 +1,226 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web Developer Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Menashe Mtku | Portfilio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts: -->
     <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap"
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
+    <title>Web Developer Portfolio</title>
   </head>
   <body>
-    <nav id="main-nav" class="navbar">
-      <div class="container">
-        <h3 class="logo">TMZGN</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <header class="header">
+      <div class="logo">
+        <a href="#">Menashe</a>
       </div>
-    </nav>
-    <header>
-      <div class="hero" id="home">
-        <div class="container">
-          <div class="hero-text">
-            <div class="presentation">
-              <p class="lead-1">Hi, I'm Menashe Mtku</p>
-              <!-- <h2 class="lead-2">Menashe Mtku</h2> -->
-              <p class="lead-2">A Web Developer</p>
-              <p class="lead-3">
-                I Specialize In Web Development For Freelancers And Buisnesses.
-              </p>
-              <div class="button-container">
-                <a href="#" class="action-btn btn"> View Resume</a>
-              </div>
-            </div>
-            <div class="image">
-              <img src="/dist/img/WhatsApp.jpg" alt="" />
-            </div>
+      <nav id="main-nav" class="navbar">
+        <div class="mobile-nav-bar">
+          <i class="fas fa-bars" id="mobile-nav-bar-icon"></i>
+        </div>
+        <ul id="header-nav-list" class="header-nav-list">
+          <li>
+            <a href="#section-home" class="header-nav-tab active">Home</a>
+          </li>
+          <li><a href="#section-about" class="header-nav-tab">About</a></li>
+          <li>
+            <a href="#section-project" class="header-nav-tab">Projects</a>
+          </li>
+          <li><a href="#section-contact" class="header-nav-tab">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- <main> -->
+    <section id="section-home" class="section hero">
+      <div class="hero-section">
+        <div class="hero-content">
+          <div class="wellcome">
+            <p class="lead-1">Hi, I'm Menashe Mtku</p>
+            <h1 class="lead-2">A Frontend Web Developer</h1>
+          </div>
+          <!-- <h2 class="lead-2">Menashe Mtku</h2> -->
+          <p class="lead-3">
+            I Specialize In Web Development For Freelancers And Buisnesses.
+          </p>
+          <div class="btn-box">
+            <a href="#"> View Resume</a>
           </div>
         </div>
+        <!-- <div class="image">
+          <img src="/dist/img/WhatsApp.jpg" alt="" />
+        </div> -->
+        <div class="social-icon-list">
+          <a href="https://www.linkedin.com/in/menashe-mtku/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/MenasheMtku" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="about">
-        <div class="container">
-          <h2>About Me</h2>
+    <section id="section-about" class="section">
+      <div class="">
+        <h2 class="heading">About Me</h2>
+        <div class="about-paragrapgh">
+          <!-- <p>Hi, my name is Menashe Mtku!</p> -->
           <p>
-            Hi, I'm John! I'm a web developer with experience in HTML, CSS,
-            JavaScript, and PHP. I love creating beautiful, responsive websites
-            that are both functional and user-friendly. When I'm not coding, you
-            can find me playing video games or hiking in the mountains.
+            I'm a frontend web developer with knowledge in HTML, CSS,
+            JavaScript, and fundamental backend abillites such as NodeJs.
+          </p>
+          <p>I graduate software engineer studies At "ORT College" in 2020.</p>
+          <p>
+            I love creating beautiful, responsive websites that are both
+            functional and user-friendly.
+          </p>
+          <p>
+            When I'm not coding, you can find me playing video games or hiking
+            in the mountains.
           </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projects">
-        <div class="container">
-          <h2>Projects</h2>
-          <div class="project">
-            <img src="project1.jpg" alt="Project 1" />
-            <h3>Project 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              hendrerit enim ac urna accumsan, eget molestie est feugiat.
-            </p>
-            <a href="#">View Project</a>
+    <section id="section-project" class="section projects">
+      <div>
+        <h2 class="heading">My Projects</h2>
+      </div>
+      <div class="projects-container">
+        <!-- project 1 -->
+        <div class="project-container project-card">
+          <div class="project-image">
+            <img
+              src="img/movie_app_v_2_2023-05-24_005535.png"
+              alt="Movie_App"
+              loading="lazy"
+            />
           </div>
-
-          <div class="project">
-            <img src="project2.jpg" alt="Project 2" />
-            <h3>Project 2</h3>
-            <p>
-              Ut tincidunt tellus ac ex hendrerit, eget blandit sapien auctor.
-              Aenean faucibus tellus vel justo placerat gravida.
+          <div class="project-info">
+            <h3 class="proj-title">Movie App</h3>
+            <p class="proj-summary">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
             </p>
-            <a href="#">View Project</a>
-          </div>
-
-          <div class="project">
-            <img src="project3.jpg" alt="Project 3" />
-            <h3>Project 3</h3>
-            <p>
-              Mauris accumsan felis eget nisl mollis, sit amet feugiat quam
-              facilisis. Nullam malesuada justo quis lectus tincidunt ultrices.
-            </p>
-            <a href="#">View Project</a>
+            <div class="proj-links">
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+              <a
+                href="https://github.com/MenasheMtku/movie-app"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section id="contact">
-        <div class="container">
-          <h2>Contact Me</h2>
-          <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Send" />
-          </form>
+        <!-- project 2 -->
+        <div class="project-container project-card">
+          <div class="project-image">
+            <img
+              src="img/movie_app_home.png"
+              alt="Movie_App"
+              loading="lazy"
+              class="project-pic"
+            />
+          </div>
+          <h3 class="project-title">Movie App</h3>
+          <p class="project-details">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            ratione vel inventore labore commodi modi quos culpa aut saepe!
+            Alias!
+          </p>
+          <div class="links">
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+            <a
+              href="https://github.com/MenasheMtku/movie-app"
+              target="_blank"
+              class="project-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-      <p>&copy; 2023 John Doe</p>
+    <section id="section-contact" class="section text-center">
+      <div class="">
+        <h2 class="heading">Contact Me</h2>
+        <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              type="text"
+              class="text-input subject-input"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+            <input
+              type="tel"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+              required
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+            ></textarea>
+            <div>
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn-dark">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- </main> -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>&copy; 2023 Menashe Mtku</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/menashe-mtku/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/MenasheMtku" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- <i class="fab fa-instagram"></i> -->
+        </div>
+      </div>
     </footer>
 
     <script src="/dist/app.js"></script>
+    <!-- <script src="/dist/projects.js"></script> -->
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <header id="home">
-      <nav id="main-nav" class="">
-        <div class="container">
-          <div class="navbar">
-            <a class="logo" href="">MM</a>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#">My Work</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="header-content">
-        <div class="container">
-          <div class="presentation">
-            <p class="lead-1">Hi, my name is</p>
-            <h1>Menashe Mtku</h1>
-            <p class="lead-2">I'm A Web Developer</p>
-            <p class="lead-3">
-              I specialize in web developmnt for Freelancers And Buisnesses.
-            </p>
-            <a href="#" class="btn"> View Resume</a>
-          </div>
-        </div>
-        <div>
-          <img src="/dist/img/WhatsApp.jpg" alt="" />
-        </div>
-      </div>
-    </header>
-  </body>
-</html> -->

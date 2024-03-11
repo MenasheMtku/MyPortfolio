@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --nav-height: 5rem;
+  --max-width: 1280px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+  /* overflow-x: hidden; */
+}
+
+body {
+  background: #eeeeee;
+  color: #000;
+  font-family: "poppins", sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.box-shadow {
+  box-shadow: 12px 1px 35px 1px #7289da;
+}
+
+.section--hidden {
+  opacity: 0;
+  /* transform: translateY(8rem); */
+}
+
+.container {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* align-items: center; */
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.none-scroll-snap-align {
+  scroll-snap-align: none;
+}
+
+.btn,
+.btn-main,
+.btn-light,
+.btn-dark,
+.btn-cv {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn {
+  color: #eeeeee;
+  background-color: #191919;
+  font-size: 1.2rem;
+}
+
+.btn-main {
+  color: #eee;
+  background-color: #7289da;
+}
+
+.btn-light {
+  color: #333;
+  background-color: #eeeeee;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #191919;
+}
+
+.btn-cv {
+  border-radius: 5px;
+  background-color: #eee;
+  border: 3px solid #191919;
+  color: #191919;
+  letter-spacing: 1.5px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+.btn-cv:hover {
+  background-color: #7289da;
+  color: #eee;
+  border-color: #7289da;
+  font-weight: 500;
+}
+
+/* .py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.s-1 {
+  font-size: 2.9rem;
+}
+
+.s-2 {
+  font-size: 1.7rem;
+}
+
+.s-3 {
+  font-size: 1.8rem;
+}
+
+.s-4 {
+  font-size: 1.2rem;
+} */

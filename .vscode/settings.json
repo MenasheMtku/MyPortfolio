@@ -1,4 +1,5 @@
 {
   "liveServer.settings.port": 5501,
-  "editor.insertSpaces": true
+  "editor.insertSpaces": true,
+  "prettier.jsxSingleQuote": true
 }

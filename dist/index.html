@@ -29,33 +29,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Web Developer Portfolio</title>
   </head>
+
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header container">
+        <!-- <div class="container"> -->
         <nav class="nav">
-          <div class="main-navbar">
-            <div class="logo">
-              <a href="#section-home">Menashe</a>
-            </div>
-            <ul id="header-nav-list" class="nav__links">
-              <li class="nav__item">
-                <a href="#section-home" class="nav__link active">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#section-about" class="nav__link">About</a>
-              </li>
-              <li class="nav__item">
-                <a href="#section-project" class="nav__link">Projects</a>
-              </li>
-              <li class="nav__item">
-                <a href="#section-contact" class="nav__link">Contact</a>
-              </li>
-            </ul>
-            <div class="toggle-btn">
-              <i class="fa-solid fa-bars"></i>
-            </div>
+          <!-- <div class="main-navbar"> -->
+          <a class="logo" href="#section-home">Menashe</a>
+
+          <ul id="header-nav-list" class="nav__links">
+            <li class="nav__item">
+              <a href="#section-home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#section-about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#section-project" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#section-contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="toggle-btn">
+            <input type="checkbox" id="toggle" name="checkbox" />
+            <label for="toggle"></label>
+            <i class="fa-solid fa-bars"></i>
           </div>
-          <div class="dropdown-menu">
+          <!-- </div> -->
+          <!-- <div class="dropdown-menu">
             <ul>
               <li>
                 <a class="nav__link" href="#section-home">Home</a>
@@ -68,86 +71,100 @@
                 <a class="nav__link" href="#section-contact">Contact</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </nav>
-        <div id="section-home" class="section hero-content">
+        <div id="section-home" class="hero-content section">
           <div class="section-1">
-            <h1 class="s-1">Hi, I am Menashe👋🏽</h1>
-            <h2 class="s-2">
-              <span class="front">F</span>ront En<span class="end">d</span>
-              Web Developer
-            </h2>
-            <p class="s-4">
-              I Specialize In Web Development For Freelancers And Buisnesses.
+            <h2>Hi, I am Menashe👋🏽</h2>
+            <h1>Front End Web Developer</h1>
+            <p>
+              I Specialize In Web Development <br />
+              For Freelancers And Buisnesses.
             </p>
             <a href="#section-project" class="btn-cv">Go To Projects</a>
           </div>
           <div class="section-2">
+            <!-- <img src="/dist/img/Mask group 17_9.png" alt="profile_image" /> -->
             <img src="/dist/img/Mask group 17_9.png" alt="profile_image" />
           </div>
         </div>
+        <!-- </div> -->
       </header>
-
-      <section id="section-about" class="section">
+      <section id="section-about" class="section container">
         <!-- <div class=""> -->
         <h2 class="section-heading">About Me</h2>
         <div class="about-paragrapgh">
           <p>
-            I'm a frontend web developer with knowledge in HTML, CSS,
-            JavaScript, and fundamental backend abillites such as NodeJs.
+            I'm a frontend web developer with knowledge in HTML, CSS, JavaScript, and fundamental backend abillites such
+            as NodeJs.
           </p>
           <p>I graduate software engineer studies At "ORT College" in 2020.</p>
-          <p>
-            I love creating beautiful, responsive websites that are both
-            functional and user-friendly.
-          </p>
-          <p>
-            When I'm not coding, you can find me playing video games or hiking
-            in the mountains.
-          </p>
+          <p>I love creating beautiful, responsive websites that are both functional and user-friendly.</p>
+          <p>When I'm not coding, you can find me playing video games or hiking in the mountains.</p>
         </div>
         <!-- </div> -->
       </section>
-
-      <section id="section-project" class="section">
+      <section id="section-project" class="section container">
         <div>
           <h2 class="section-heading">My Projects</h2>
         </div>
-        <div class="projects-main-container">
-          <!-- project 1 -->
+        <div class="project-list">
+          <div class="project">
+            <img src="img/Screenshot 2024-05-17 165055.png" />
+            <div class="layer">
+              <h3 class="proj-title">Movie App</h3>
+              <p class="proj-summary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi
+                quos culpa aut saepe! Alias!
+              </p>
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/movie_app_v_2_2023-05-24_005535.png" />
+            <div class="layer">
+              <h3 class="proj-title">Movie App</h3>
+              <p class="proj-summary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi
+                quos culpa aut saepe! Alias!
+              </p>
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="img/movie_app_v_2_2023-05-24_005535.png" />
+            <div class="layer">
+              <h3 class="proj-title">Movie App</h3>
+              <p class="proj-summary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi
+                quos culpa aut saepe! Alias!
+              </p>
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="projects-main-container">
           <div class="project-container project-card">
             <div class="project-image">
-              <img
-                src="img/movie_app_v_2_2023-05-24_005535.png"
-                alt="Movie_App"
-                loading="lazy"
-              />
+              <img src="img/movie_app_v_2_2023-05-24_005535.png" alt="Movie_App" loading="lazy" />
             </div>
             <div class="project-info">
               <h3 class="proj-title">Movie App</h3>
               <p class="proj-summary">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                ratione vel inventore labore commodi modi quos culpa aut saepe!
-                Alias!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi
+                quos culpa aut saepe! Alias!
               </p>
               <div class="proj-links">
-                <a href="#" target="_blank" class="project-link"
-                  >Check it Out</a
-                >
-                <a
-                  href="https://github.com/MenasheMtku/movie-app"
-                  target="_blank"
-                  class="project-link"
-                >
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+                <a href="https://github.com/MenasheMtku/movie-app" target="_blank" class="project-link">
                   <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
-
-      <section id="section-contact" class="section">
+      <section id="section-contact" class="section container">
         <!-- <h2 class="section-heading">Contact Me</h2> -->
         <div class="contact-page">
           <div class="contact-side-1">
@@ -155,109 +172,65 @@
               <div class="contact-heading">
                 <h2>Lets Talk</h2>
                 <p>
-                  Have some big idea or brand to develop and need help? Then
-                  reach out we'd love to hear about your project and provide
-                  help
+                  Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your
+                  project and provide help
                 </p>
               </div>
               <div class="contact-address">
-                <h3>Email</h3>
-                <p>MyEmailAddress</p>
+                <!-- <h3>Email</h3> -->
+                <p><i class="fa-solid fa-paper-plane"></i>menashemetuko@gmail.com</p>
               </div>
-              <div class="contact-social">
+              <div class="contact-social social">
+                <a href="https://www.linkedin.com/in/menashe-mtku/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/MenasheMtku" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <!-- <a href="#">LinkedIn</a>
                 <a href="#">LinkedIn</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">LinkedIn</a>
+                <a href="#">LinkedIn</a> -->
               </div>
             </div>
           </div>
           <div class="contact-side-2">
-            <form
-              class="contact-form"
-              method="post"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
-            >
+            <form class="contact-form" method="post" data-netlify="true" data-netlify-recaptcha="true">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input id="name" type="text" />
+                <!-- <label for="name">Name</label> -->
+                <input id="name" type="text" placeholder="Your Name" />
+                <!-- <input id="subject" type="text" placeholder="Select Subject" /> -->
+                <input id="email" type="email" required placeholder="Email Address" />
+                <input id="phone" type="tel" placeholder="Phone" />
+                <textarea name="message" rows="4" id="message" type="text" placeholder="Select Subject"></textarea>
+                <button type="submit" class="btn-dark">Send</button>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label for="subject">Subject</label>
-                <input id="subject" type="text" />
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input id="email" type="email" required />
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
-                <input id="phone" type="tel" />
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" type="text"> </textarea>
               </div>
               <div class="form-group">
-                <button type="submit" class="btn-dark">Send</button>
-              </div>
+              </div> -->
             </form>
-            <!-- <form
-              class="grid-form"
-              method="POST"
-              data-netlify="true"
-              data-netlify-recaptcha="true"
-            >
-              <div class="text-fields">
-                <input
-                  type="text"
-                  class="text-input name-input"
-                  placeholder="Name"
-                  name="name"
-                />
-                <input
-                  type="text"
-                  class="text-input subject-input"
-                  placeholder="Subject"
-                  name="subject"
-                />
-                <input
-                  type="email"
-                  class="text-input email-input"
-                  placeholder="Email Address"
-                  name="email"
-                  required
-                />
-                <input
-                  type="tel"
-                  class="text-input phone-input"
-                  placeholder="Phone Number"
-                  name="phone"
-                  required
-                />
-                <textarea
-                  class="text-input message-input"
-                  placeholder="Enter Message"
-                  name="message"
-                ></textarea>
-                <div>
-                  <div data-netlify-recaptcha="true"></div>
-                </div>
-                <button type="submit" class="btn-dark">Send</button>
-              </div>
-            </form> -->
           </div>
         </div>
       </section>
-
       <!-- </main> -->
       <footer id="main-footer">
         <div class="footer-content container">
           <p>&copy; 2023 Menashe Mtku</p>
           <div class="social">
-            <a href="https://www.linkedin.com/in/menashe-mtku/" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+            <a href="https://www.linkedin.com/in/menashe-mtku/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/MenasheMtku" target="_blank">
               <i class="fab fa-github"></i>
             </a>
@@ -265,7 +238,9 @@
               <i class="fab fa-facebook"></i>
             </a>
           </div>
-          <a href="#" class="btt"> <i class="fas fa-chevron-up"></i> </a>
+          <a href="#" class="btt">
+            <i class="fas fa-chevron-up"></i>
+          </a>
         </div>
       </footer>
     </div>

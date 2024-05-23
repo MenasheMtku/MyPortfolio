@@ -1,27 +1,48 @@
 const allSections = document.querySelectorAll(".section");
-const navEl = document.querySelector(".main-navbar");
+const navEl = document.querySelector(".nav");
 const headerNavList = document.querySelector(".nav__links");
 const tabs = document.querySelectorAll(".nav__link");
+const itemTab = document.querySelectorAll(".nav__item");
 // const navigation = document.querySelector(".header");
 // const navigationHeight = navigation.offsetHeight;
 const toggleBtn = document.querySelector(".toggle-btn");
+const checkbox = document.querySelector("input[name=checkbox]");
+// const checkBoxMenu = document.getElementById("#toogle");
 const toggleBtnIcon = document.querySelector(".toggle-btn i");
 //
-const dropDownMenu = document.querySelector(".dropdown-menu");
+// const dropDownMenu = document.querySelector(".dropdown-menu");
 const dropDownOption = document.querySelectorAll(".dropdown-menu ul li a");
 //
 let backToTop = document.querySelector(".btt");
 //
-// let active = document.getElementsByClassName(".active");
+let active = document.getElementsByClassName(".active");
+
+checkbox.addEventListener("change", function () {
+  if (this.checked) {
+    headerNavList.style.display = "flex";
+    headerNavList.style.transform = "translateX(0)";
+    // headerNavList.style.transform = "scale(0)";
+    console.log("Checkbox is checked..");
+  } else {
+    headerNavList.style.display = "none";
+    headerNavList.style.transform = "translateX(200%)";
+    console.log("Checkbox is not checked..");
+  }
+});
 
 navEl.addEventListener("mouseover", function (e) {
   const link = e.target.classList.contains("nav__link");
   if (link) {
     tabs.forEach(tab => tab.classList.remove("active"));
     e.target.classList.add("active");
-    console.log(e.target);
   }
 });
+
+// itemTab.addEventListener("click", function (e) {
+//   if (e) {
+//     checkbox.checked = false;
+//   }
+// });
 
 const headerEl = document.querySelector("header");
 let navHeight = navEl.getBoundingClientRect().height;
@@ -41,15 +62,6 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 
 headerObserver.observe(headerEl);
 
-dropDownOption.forEach(opt => {
-  opt.addEventListener("click", function (e) {
-    console.log(e.target);
-    dropDownMenu.classList.remove("open");
-    toggleBtnIcon.classList.remove("fa-xmark");
-    toggleBtnIcon.classList.add("fa-bars");
-  });
-});
-
 const revaelSection = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
@@ -60,21 +72,13 @@ const revaelSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revaelSection, {
   root: null,
-  threshold: 0.1,
+  threshold: 0.4,
 });
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
   // reavele the section
-  // section.classList.add("section--hidden");
-});
-
-toggleBtn.addEventListener("click", e => {
-  console.log(e.target);
-  dropDownMenu.classList.toggle("open");
-  const isOpen = dropDownMenu.classList.contains("open");
-
-  toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+  section.classList.add("section--hidden");
 });
 
 // BackToTop Button
@@ -101,42 +105,23 @@ window.onscroll = function (ev) {
   }
 };
 
-toggleBtn.addEventListener("click", function () {
-  console.log("hamborger clicked");
-});
+// dropDownOption.forEach(opt => {
+//   opt.addEventListener("click", function (e) {
+//     console.log(e.target);
+//     dropDownMenu.classList.remove("open");
+//     toggleBtnIcon.classList.remove("fa-xmark");
+//     toggleBtnIcon.classList.add("fa-bars");
+//   });
+// });
 
-// media query
-// const mediaQuery = window.matchMedia("(max-width: 955px)");
-// mediaQuery.addListener(handleDeviceChange);
+// toggleBtn.addEventListener("click", e => {
+//   console.log(e.target);
+//   dropDownMenu.classList.toggle("open");
+//   const isOpen = dropDownMenu.classList.contains("open");
 
-// document.documentElement.style.setProperty(
-//   "--scroll-padding",
-//   navigationHeight + "px"
-// );
+//   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+// });
 
-// // check the device width, adding/removig class '.active' from a tag in the menu
-// function handleDeviceChange(e) {
-//   if (e.matches) {
-//     tabs.forEach(tab => {
-//       tab.addEventListener("click", function () {
-//         // hides menu after clicking on a link
-//         mobileNavBarIcon.className = "fas fa-bars";
-//         headerNavList.style.transform = "translateX(200%)";
-//         // Add active class to the selected tab
-//         tabs.forEach(tab => tab.classList.remove("active"));
-//         this.classList.remove("active");
-//         console.log("class 'active' removed");
-//       });
-//     });
-//   } else
-//     tabs.forEach(tab => {
-//       tab.addEventListener("click", function () {
-//         // Add active class to the selected tab
-//         tabs.forEach(tab => tab.classList.remove("active"));
-//         this.classList.add("active");
-//         console.log("class 'active' Added");
-//       });
-//     });
-// }
-
-// handleDeviceChange(mediaQuery);
+// toggleBtn.addEventListener("click", function () {
+//   console.log("hamborger clicked");
+// });

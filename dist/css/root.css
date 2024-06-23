@@ -1,56 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
+  /* colors pallet */
+  --bs-purple: #6f42c1;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-500: #adb5bd;
+  --bs-dark: #212529;
+  --bs-gray: #eee;
+  --bs-dark-gray: #818283;
+  /* main colors */
+  --main-color: var(--bs-gray-300);
+  --second-color: var(--bs-purple);
+  --accent-color: var(--bs-dark);
+  --third-color: var(--bs-gray-500);
+  --gray-bg: var(--bs-gray);
+  /* dimentions */
+  --max-width: 1440px;
   --nav-height: 5rem;
-  --max-width: 1280px;
-  --animation-curve: cubic-bezier(1, 0, 0, 1);
-  --border-red: 2px solid red;
-  --border-green: 2px solid green;
-  --border-blue: 2px solid blue;
+  --nav-margin: 1.5rem;
+  --row-gap-1: 1rem;
+  --col-gap-1: 1rem;
+  --nav-links-gap: 4rem;
+  /* fonts sizing */
+  --font-xl: 2.6rem;
+  --font-lg: 2rem;
+  --font-md: 1.3rem;
+  --font-sm: 1.1rem;
+  --font-xs: 0.8rem;
+  /* titles and other*/
+  --font-title: 2.3rem;
+  --font-input: 1.1rem;
+  --font-footer: 1.1rem;
+  --font-footer-icon: 1.8rem;
+  /* font weight */
+  --font-200: 200;
+  --font-400: 400;
+  --font-500: 500;
+  --font-600: 600;
+  --font-800: 800;
+  /* hero image sizes */
   --bg-image: 350px;
   --md-image: 230px;
   --sm-image: 190px;
+
+  /* animations */
+  --animation-curve: cubic-bezier(1, 0, 0, 1);
+
+  /* testing */
+  --border-red: 3px solid red;
+  --border-green: 3px solid green;
+  --border-blue: 3px solid blue;
+  --box-width: 250px;
+  --box-height: 250px;
+  --img-height: 330px;
+  /* 768 and benif */
+  --min-image-height: 200px;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
-  scroll-padding-top: var(--nav-height);
-  /* overflow-x: hidden; */
-}
-
-body {
-  background: #eeeeee;
-  color: #000;
-  font-family: "poppins", sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
-  /* background: #080808;
-  color: #fff; */
-  /* margin: 0 auto; */
-  /* overflow: hidden; */
-}
-
-.container {
-  padding: 10px 10%;
-  /* max-width: 1280px;
-  margin: 0 auto;
-  align-items: center; */
-}
-
-.social {
-  display: flex;
-  font-size: 1.9rem;
-  column-gap: 1rem;
-  /* justify-content: space-evenly; */
+  box-sizing: border-box;
 }
 
 ul {
@@ -58,6 +70,58 @@ ul {
 }
 a {
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: var(--nav-height);
+  /* font-size: 62.5%; */
+  /* overflow-x: hidden; */
+  /* background-color: #000; */
+}
+
+body {
+  background-color: var(--main-color);
+  /* color: #000; */
+  font-family: "poppins", sans-serif;
+  line-height: 1.6;
+  min-height: 100%;
+  color: var(--accent-color);
+}
+
+.nav-container {
+  padding: 10px 4%;
+}
+.container {
+  padding: 10px 5%;
+}
+
+.section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  transition: transform 1s, opacity 1s;
+  /* display: flex;
+  flex-direction: column; */
+  /* background: var(--section-bg); */
+}
+
+.section-tilte {
+  /* font-size: 2.5rem; */
+  width: 100%;
+  font-size: var(--font-title);
+  font-weight: var(--font-400);
+  color: var(--accent-color);
+  text-align: center;
+  display: inline-block;
+  /* box-shadow: 0.1rem 10px 60px 0px #7289da; */
+}
+.social {
+  display: flex;
+  font-size: 1.9rem;
+  column-gap: 1rem;
+  /* justify-content: space-evenly; */
 }
 
 .box-shadow {
@@ -83,13 +147,13 @@ a {
   scroll-snap-align: none;
 }
 
-.btn,
-.btn-main,
+/* .btn-main,
 .btn-light,
 .btn-dark,
-.btn-cv {
+.btn-cv  */
+.btn {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.6rem;
   transition: all 0.5s;
   border: none;
   cursor: pointer;
@@ -97,11 +161,14 @@ a {
 }
 
 .btn {
-  color: #eeeeee;
+  /* color: var(--accent-color);
   background-color: #191919;
-  font-size: 1.2rem;
+  font-size: 1.2rem; */
 }
-
+.action-btn {
+  font-size: var(--font-sm);
+  /* font-weight: 700; */
+}
 .btn-main {
   color: #eee;
   background-color: #7289da;
@@ -114,69 +181,25 @@ a {
 
 .btn-dark {
   color: #f4f4f4;
-  background-color: #191919;
+  background-color: var(--accent-color);
 }
 
 .btn-cv {
-  border-radius: 5px;
-  background-color: #eee;
-  border: 3px solid #191919;
-  color: #191919;
-  letter-spacing: 1.5px;
+  /* border-radius: 5px; */
+  background-color: #6082b6;
+  color: #eee;
+  border: 0.01rem solid #191919;
+  letter-spacing: 1.4px;
   transition: all 0.3s;
   font-weight: 500;
+  border-radius: 10px;
 }
 .btn-cv:hover {
   background-color: #7289da;
-  color: #eee;
+  /* color: #191919; */
   border-color: #7289da;
   font-weight: 500;
+  /* border-radius: 0 18px 18px 0; */
+  border-radius: 0;
+  transition: all 0.3s ease-in;
 }
-
-/* .py-1 {
-  padding: 1rem 0;
-}
-
-.py-2 {
-  padding: 2rem 0;
-}
-
-.py-3 {
-  padding: 3rem 0;
-}
-
-.py-4 {
-  padding: 4rem 0;
-}
-
-.my-1 {
-  margin: 1rem 0;
-}
-
-.my-2 {
-  margin: 2rem 0;
-}
-
-.my-3 {
-  margin: 3rem 0;
-}
-
-.my-4 {
-  margin: 4rem 0;
-}
-
-.s-1 {
-  font-size: 2.9rem;
-}
-
-.s-2 {
-  font-size: 1.7rem;
-}
-
-.s-3 {
-  font-size: 1.8rem;
-}
-
-.s-4 {
-  font-size: 1.2rem;
-} */

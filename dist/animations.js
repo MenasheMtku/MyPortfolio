@@ -39,9 +39,9 @@ $(".btt").click(function () {
 
 window.onscroll = function (ev) {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-    backToTop.classList.add("box-shadow");
+    backToTop.classList.add("btt-box-shadow");
   } else {
-    backToTop.classList.remove("box-shadow");
+    backToTop.classList.remove("btt-box-shadow");
   }
 };
 

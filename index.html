@@ -30,6 +30,7 @@
 
   <body>
     <div class="wrapper">
+      <div class="navbar">
       <nav class="nav nav-container">
         <div>
           <a href="#section-contact" class="logo btn">Hire Me!</a>
@@ -50,11 +51,12 @@
           <a href="#section-contact" class="nav__link">Contact</a>
         </ul>
       </nav>
+    </div>
       <header class="header">
         <div id="section-home" class="hero-content container section">
           <div class="section-1">
-            <h2>Hi, I am Menashe👋🏽</h2>
-            <h1>A Front End Developer</h1>
+            <h2>Hi, I am Menashe <span class="wave">👋🏽</span></h2>
+            <h1>Frontend Web Developer</h1>
             <p>
               I Specialize In Web Development 
               For Freelancers And Buisnesses.
@@ -63,11 +65,12 @@
           </div>
           <div class="section-2">
             <div class="img-container">
+                 <!-- <img src="/dist/img/" alt="profile_image" /> -->
               <div class="box">
                 <div class="circle">
                   <img src="dist/img/IMG_8369 2.png" alt="profile_image" />
                 </div>
-                <!-- <img src="/dist/img/IMG_8369 1.png" alt="profile_image" /> -->
+             
               </div>
             </div>
             
@@ -77,34 +80,72 @@
         <!-- </div> -->
       </header>
       <section id="section-about" class="section container">
-        <!-- <div class=""> -->
-        <h2 class="section-tilte">About Me</h2>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
         <div class="about-paragrapgh">
           <div class="about-p-container">
+          <code>
+            <ul class="about-list">
+              <li><span>&lt;p&gt;</span>I graduate software engineer studies At "ORT College" in 2020.<span>&lt;/p&gt;</span></li>
+              <li>
+                <span>&lt;p&gt;</span>I'm a frontend web developer with knowledge in HTML, CSS,
+                JavaScript<span>&lt;/p&gt;</span>
+              </li>
+              <li>
+                <span>&lt;p&gt;</span>In addition, I have experience in React and TailwindCSS. Therefore I can build scalable web applications efficiently and enabling rapid styling.<span>&lt;/p&gt;</span>
+              </li>
+           
+              <li>
+                <span>&lt;p&gt;</span>I love creating beautiful, responsive websites that are both
+                functional and user-friendly.<span>&lt;/p&gt;</span>
+              </li>
+              <li>
+                <span>&lt;p&gt;</span>When I'm not coding, you can find me probebly running or watching Manchester United football game 
+                <span>&lt;/p&gt;</span>
+              </li>
+            </ul>
+        </code>
+        </div>
+      
+        </div>
+        <div class="stack">
+          <p class="stack-title">My Stack</p>
 
-          
-          <p>
-            I'm a frontend web developer with knowledge in HTML, CSS,
-            JavaScript, and fundamental backend abillites such as NodeJs.
-          </p>
-          <p>I graduate software engineer studies At "ORT College" in 2020.</p>
-          <p>
-            I love creating beautiful, responsive websites that are both
-            functional and user-friendly.
-          </p>
-          <p>
-            When I'm not coding, you can find me playing video games or hiking
-            in the mountains.
-          </p>
+        <div class="logos">
+          <div class="logo-item">
+            <p class="logo-title">HTML</p>
+            <img class="skill-svg" src = "/assets/skillsLogos/html-5_logo.svg" alt="My Happy SVG"/>
+          </div>
+          <div class="logo-item">
+            <p class="logo-title">CSS</p>
+            <img class="skill-svg" src = "/assets/skillsLogos/css-3_logo.svg" alt="My Happy SVG"/>
+          </div>
+          <div class="logo-item">
+            <p class="logo-title">Javascript</p>
+            <img class="skill-svg" src = "/assets/skillsLogos/javascript_logo.svg" alt="My Happy SVG"/>
+          </div>
+          <div class="logo-item">
+            <p class="logo-title">React</p>
+            <img class="skill-svg" src = "/assets/skillsLogos/react_logo.svg" alt="My Happy SVG"/>
+          </div>
+          <div class="logo-item">
+            <p class="logo-title">TailwindCSS</p>
+            <img class="skill-svg" src = "/assets/skillsLogos/tailwind-css_logo.svg" alt="My Happy SVG"/>
+          </div>
+          <div class="logo-item">
+            <p class="logo-title">git</p>
+            <img class="skill-svg" src = "/assets/skillsLogos/git-logo.svg" alt="My Happy SVG"/>
+          </div>
+       
         </div>
+      </div>
         </div>
-        <!-- </div> -->
       </section>
-      <section id="section-project" class="section container">
-         <h2 class="section-tilte">My Projects</h2>
+      <section id="section-project" class="section">
+         <h2 class="section-title">My Projects</h2>
          
         <div class="project-list">
-            <div class="project ">
+            <div class="project">
               <div class="proj-img-container">
                 <!-- <div class="img-overlay"></div> -->
                 <img src="dist/img/movieAppImg.png" />
@@ -114,12 +155,12 @@
                 <p class="proj-summary">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas voluptatibus, quia molestiae ipsam amet quisquam
                 </p>
-                <a href="#" target="_blank" class="project-link"
+                <a href="https://tmdbfprime.netlify.app/" target="_blank" class="project-link"
                   >Check it Out</a
                 >
               </div>
             </div>
-            <div class="project ">
+            <div class="project">
               <div class="proj-img-container">
                 <!-- <div class="img-overlay"></div> -->
                 <img src="dist/img/movieAppImg.png" />
@@ -141,7 +182,7 @@
                 <img src="dist/img/movie_app_home.png" />
               </div>
               <!-- <img src="img/movie_app_home.png" /> -->
-              <div class="layer ">
+              <div class="layer">
                 <h3 class="proj-title">Movie App</h3>
                 <p class="proj-summary">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas voluptatibus, quia molestiae ipsam amet quisquam
@@ -168,41 +209,9 @@
      
       </section>
       <section id="section-contact" class="section w-full">
-        <h2 class="section-tilte">Contact Me</h2>
+        <h2 class="section-title">Contact Me</h2>
         <div class="contact-page">
-          <!-- <div class="contact-side-1">
-            <div class="pre-form">
-              <div class="contact-heading">
-                <h2>Lets Talk</h2>
-                <p>
-                  Have some big idea or brand to develop and need help? Then
-                  reach out we'd love to hear about your project and provide
-                  help
-                </p>
-              </div>
-              <div class="contact-address">
-               
-                <p>
-                  <i class="fa-solid fa-paper-plane"></i>menashemetuko@gmail.com
-                </p>
-              </div>
-              <div class="contact-social social">
-                <a
-                  href="https://www.linkedin.com/in/menashe-mtku/"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/MenasheMtku" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <div class="contact-side-2">
+          <!-- <div class="contact-side-2"> -->
             <form
               class="contact-form"
               method="post"
@@ -225,7 +234,7 @@
                 <!-- <input id="phone" type="tel" name="phone" placeholder="Phone" /> -->
                 <textarea
                   name="message"
-                  rows="4"
+                  rows="6"
                   id="message"
                   type="text"
                   placeholder="Write message.."
@@ -238,13 +247,13 @@
                 </div>
               </div>
             </form>
-          </div>
+          <!-- </div> -->
         </div>
       </section>
-      <hr>
+      <!-- <hr> -->
       <!-- </main> -->
       <footer id="main-footer">
-        <div class="footer-content container">
+        <div class="footer-content nav-container">
           <p class="year">/p>
           <div class="social">
             <a href="https://www.linkedin.com/in/menashe-mtku/" target="_blank"

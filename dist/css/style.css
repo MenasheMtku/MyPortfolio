@@ -105,6 +105,9 @@ nav svg {
   grid-template-columns: 2fr 1fr;
   align-items: center;
 }
+.hero-content .section-1 {
+  padding-left: 2rem;
+}
 .hero-content .section-1 h1 {
   font-size: 2.9rem;
   color: #7289da;
@@ -197,7 +200,7 @@ nav svg {
     /* padding: 20px; */
 
     .about-list {
-      /* list-style: circle; */
+      list-style: disc;
     }
 
     li {
@@ -265,90 +268,85 @@ nav svg {
   flex-direction: column;
   align-items: center; */
   /* max-width: 1280px; */
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
 
-  .project-list {
-    /* gpt */
-    /* max-width: 1280px; */
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 350px)); */
-    grid-auto-rows: 1fr;
-    grid-gap: 1rem;
-    padding: 1rem;
-    margin: 0 auto;
-    background: antiquewhite;
+.project-list .project {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* gpt */
+  /* display: flex;
+    flex-direction: column; */
+  border: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+  flex: 0 1 300px;
+}
+.project-list .proj-img-container {
+  position: relative;
+  width: 100%;
 
-    .project {
-      display: grid;
-      grid-template-rows: 1fr 1fr;
-      /* gpt */
-      /* display: flex;
-      flex-direction: column; */
-      border: 1px solid #ddd;
-      overflow: hidden;
-      position: relative;
-
-      .proj-img-container {
-        position: relative;
-        width: 100%;
-      }
-
-      img {
-        /* gpt */
-        position: relative;
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: grayscale(90%);
-        /* transition: all 0.3s ease-in-out; */
-      }
-
-      .layer {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        color: #000;
-        /* column-gap: 1rem; */
-        padding: 0.5rem;
-        /* transition: height 0.5s; */
-        /* background: linear-gradient(var(--accent-color), rgba(0, 0, 0, 0.6)); */
-        /* text-align: center; */
-        border: black 2px solid;
-
-        .proj-title {
-          font-size: 1.2rem;
-          /* color: #fff; */
-        }
-
-        .proj-summary {
-          font-size: 1.1rem;
-          /* color: #fff; */
-        }
-        .project-link {
-          /* color: #fff; */
-          font-weight: 600;
-        }
-      }
-    }
-    .project:hover img {
-      filter: grayscale(30%);
-      /* transform: scale(1.1); */
-      /* display: block; */
-      /* height: 100%; */
-      /* transition: all 2s ease-in; */
-    }
-    .project:hover .layer {
-      /* height: 100%; */
-    }
-    .project:hover .img-overlay::before {
-      background: transparent;
-      opacity: 0;
-    }
+  img {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(90%);
   }
+}
+
+.project-list .overview {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #000;
+  padding: 0.5rem;
+  border: black 2px solid;
+}
+.project-list .overview .p-title {
+  font-size: 1.1rem;
+}
+
+.project-list .overview .p-summary {
+  /* font-size: 1.1rem; */
+  /* color: #fff; */
+}
+.project-list .overview .project-link {
+  color: #1d1a1a;
+  font-weight: 600;
+  cursor: pointer;
+}
+.project-list .overview .visit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-list .overview .visit img {
+  width: 20px;
+  cursor: pointer;
+}
+.project:hover .proj-img-container img {
+  filter: grayscale(30%);
+  /* transform: scale(1.1); */
+  /* display: block; */
+  /* height: 100%; */
+  transition: all 0.1s ease-in;
+}
+
+.project:hover .img-overlay::before {
+  background: transparent;
+  opacity: 0;
 }
 
 #section-contact {

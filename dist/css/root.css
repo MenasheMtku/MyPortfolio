@@ -76,7 +76,11 @@ body {
   transition: transform 1s, opacity 1s;
   /* display: flex;
   flex-direction: column; */
-  /* background: var(--section-bg); */
+  /* background: aliceblue; */
+  margin-bottom: 1.5rem;
+}
+section:last-of-type {
+  margin-bottom: 0;
 }
 
 .section-title {

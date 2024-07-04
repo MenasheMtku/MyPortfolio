@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Movie App",
+      "description": "Explore new movies and tv shows, cast members and watch the trailer",
+      "codeUrl": "https://github.com/MenasheMtku/movie-app-react",
+      "image": "dist/img/movieAppImg.png",
+      "siteUrl": "https://tmdbfprime.netlify.app/"
+    },
+    {
+      "id": 2,
+      "title": "RGB Color Game",
+      "description": "Guess the correct color in the board which is corresponds to the RGB phrase",
+      "codeUrl": "https://github.com/MenasheMtku/rgb-color-game",
+      "image": "dist/img/rgb_color_game.png",
+      "siteUrl": "https://rgb-color-dcc2b8.netlify.app/"
+    }
+  ],
+  "skills": [
+    {
+      "title": "HTML",
+      "image": "./assets/skillsLogos/html-5_logo.svg",
+      "alt": "html5"
+    },
+    {
+      "title": "CSS",
+      "image": "./assets/skillsLogos/css-3_logo.svg",
+      "alt": "css"
+    },
+    {
+      "title": "Javascript",
+      "image": "./assets/skillsLogos/javascript_logo.svg",
+      "alt": "javascript"
+    },
+    {
+      "title": "React",
+      "image": "./assets/skillsLogos/react_logo.svg",
+      "alt": "react"
+    },
+    {
+      "title": "TailwindCSS",
+      "image": "./assets/skillsLogos/tailwind-css_logo.svg",
+      "alt": "tailwind css"
+    },
+    {
+      "title": "git",
+      "image": "./assets/skillsLogos/git-logo.svg",
+      "alt": "git"
+    }
+  ]
+}

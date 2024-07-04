@@ -3,7 +3,14 @@
 const navEl = document.querySelector(".nav");
 const headerNavList = document.querySelector(".nav__links");
 const tabs = document.querySelectorAll(".nav__link");
+const stack = document.querySelectorAll(".skill-svg");
+// const cards = document.querySelectorAll(".project");
 // --------------------------------------------------
+
+// cards.forEach(card => {
+//   card.classList.add("card-shadow");
+//   console.log("box shadow added");
+// });
 
 let currentDate = new Date();
 let currentYear = currentDate.getFullYear();
@@ -30,3 +37,8 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(headerEl);
+
+// console.log(stack);
+// stack.forEach(skill => {
+//   skill.classList.add("btt-box-shadow");
+// });

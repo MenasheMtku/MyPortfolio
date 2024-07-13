@@ -3,6 +3,17 @@ let backToTop = document.querySelector(".btt");
 let rocketIcon = document.querySelector(".rocket");
 let active = document.getElementsByClassName(".active");
 
+let themeToggle = document.getElementById("theme-toogle");
+
+themeToggle.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    themeToggle.src = "./assets/sun-svgrepo-com.svg";
+  } else {
+    themeToggle.src = "./assets/moon-svgrepo-com.svg";
+  }
+};
+
 const revaelSection = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
@@ -16,13 +27,15 @@ const sectionObserver = new IntersectionObserver(revaelSection, {
   threshold: 0.4,
 });
 
-// allSections.forEach(function (section) {
-//   sectionObserver.observe(section);
-//   section.classList.add("section--hidden");
-// });
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
 // --------------------------------------------------
 // BackToTop Button
-const scrolled = 400;
+// var $backToTop = $(".btt");
+// $backToTop.hide();
+let scrolled = 400;
 $(window).scroll(function () {
   if ($(window).scrollTop() > scrolled) {
     $(".btt").fadeIn("slow");
@@ -37,13 +50,13 @@ $(".btt").click(function () {
   return false;
 });
 
-window.onscroll = function (ev) {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-    backToTop.classList.add("btt-box-shadow");
-  } else {
-    backToTop.classList.remove("btt-box-shadow");
-  }
-};
+// window.onscroll = function (ev) {
+//   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+//     backToTop.classList.add("btt-box-shadow");
+//   } else {
+//     backToTop.classList.remove("btt-box-shadow");
+//   }
+// };
 
 // --------------------------------------------------
 backToTop.addEventListener("mouseover", function () {

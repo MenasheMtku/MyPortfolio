@@ -18,14 +18,12 @@
     />
     <link rel="stylesheet" href="dist/css/style.css" />
     <!-- Tab Title -->
-    <title>Menashe Mtku | Portfilio</title>
+    <title>Menashe Mtku | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" src="./dist/projects.js" defer></script>
     <!-- JQuery -->
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-      defer
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
 
   <body>
@@ -69,6 +67,7 @@
             <a href="#section-about" class="nav__link">About</a>
             <a href="#section-project" class="nav__link">Projects</a>
             <a href="#section-contact" class="nav__link">Contact</a>
+            <img src="./assets/moon-svgrepo-com.svg" id="theme-toogle" />
           </ul>
         </nav>
       </div>
@@ -77,10 +76,10 @@
           <div class="section-1">
             <h2>Hi, I am Menashe <span class="wave">👋🏽</span></h2>
             <h1>Frontend Web Developer</h1>
-            <p>
-              I Specialize In Web Development For Freelancers And Buisnesses.
-            </p>
-            <a href="#section-project" class="btn btn-cv">Go To Projects</a>
+            <p>I Specialize In Web Development and resposive layouts.</p>
+            <a href="#section-project" class="btn call-to-action"
+              >Go To Projects</a
+            >
           </div>
           <div class="section-2">
             <div class="img-container">
@@ -100,36 +99,35 @@
       <section id="section-about" class="section container">
         <h2 class="section-title">About Me</h2>
         <div class="about-container">
-          <div class="about-paragrapgh">
-            <div class="about-p-container">
-              <code>
-                <ul class="about-list">
-                  <li>
-                    I graduate software engineer studies At "ORT College" in
-                    2020.
-                  </li>
-                  <li>
-                    I'm a frontend web developer with knowledge in HTML, CSS,
-                    JavaScript
-                  </li>
-                  <li>
-                    In addition, I have experience in React and TailwindCSS.
-                    Therefore I can build scalable web applications efficiently
-                    and enabling rapid styling.
-                  </li>
+          <!-- <div class="about-paragrapgh"> -->
+          <div class="about-p-container">
+            <code>
+              <ul class="about-list">
+                <li>
+                  I graduate software engineer studies At "ORT College" in 2020.
+                </li>
+                <li>
+                  I'm a frontend web developer with knowledge in HTML, CSS,
+                  JavaScript
+                </li>
+                <li>
+                  In addition, I have experience in React and TailwindCSS.
+                  Therefore I can build scalable web applications efficiently
+                  and enabling rapid styling.
+                </li>
 
-                  <li>
-                    I love creating beautiful, responsive websites that are both
-                    functional and user-friendly.
-                  </li>
-                  <li>
-                    When I'm not coding, you can find me probebly running or
-                    watching Manchester United football game
-                  </li>
-                </ul>
-              </code>
-            </div>
+                <li>
+                  I love creating beautiful, responsive websites that are both
+                  functional and user-friendly.
+                </li>
+                <li>
+                  When I'm not coding, you can find me probebly running or
+                  watching Manchester United football game
+                </li>
+              </ul>
+            </code>
           </div>
+          <!-- </div> -->
           <div class="stack">
             <p class="stack-title">My Stack</p>
 
@@ -196,7 +194,7 @@
           <!-- </div> -->
         </div>
       </section>
-      <!-- <hr> -->
+      <!-- <hr   /> -->
       <!-- </main> -->
       <footer id="main-footer">
         <div class="footer-content container">
@@ -214,7 +212,6 @@
           </div>
           <div class="btt">
             <i class="fa-brands fa-space-awesome"></i>
-            <!-- </a> -->
           </div>
         </div>
       </footer>
@@ -222,6 +219,5 @@
   </body>
   <!-- Javascript -->
   <script src="./dist/app.js"></script>
-  <script type="module" src="./dist/projects.js"></script>
-  <!-- <script src="./dist/animations.js"></script> -->
+  <script src="./dist/animations.js"></script>
 </html>

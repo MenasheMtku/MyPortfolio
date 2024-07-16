@@ -40,6 +40,7 @@ nav .logo {
   padding-left: 0;
   text-transform: capitalize;
 }
+
 nav a {
   height: 100%;
   /* padding: 0 20px; */
@@ -354,7 +355,6 @@ nav img {
   padding: 0.8rem 0.8rem;
   margin: 0 auto;
   border-radius: 10px;
-  /* background-color: var(--primary-text); */
 }
 
 .contact-page .contact-form {
@@ -364,14 +364,13 @@ nav img {
   .form-group input,
   .form-group textarea {
     width: 100%;
-    border: 0;
+    border: 1px solid var(--primary-text);
     outline: none;
     padding: 15px;
     margin: 12px 0;
     color: var(--primary-text);
-    font-weight: 500;
-
     background: var(--border-color);
+    font-weight: 500;
     font-size: 1.1rem;
     border-radius: 5px;
   }
@@ -521,12 +520,12 @@ nav img {
     /* margin-right: auto;
     margin-left: 0; */
   }
-  .nav a:hover {
+  .nav .nav__link a:hover {
     background-color: var(--secondary-text);
     color: var(--background);
     transition: 0.4s ease;
   }
-  .nav a:hover::after {
+  .nav .nav__link a:hover::after {
     width: 0;
   }
   .open-sidebar-button {

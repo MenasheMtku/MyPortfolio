@@ -125,7 +125,7 @@ nav img {
 .hero-content .section-2 .box {
   position: relative;
   width: var(--box-width);
-  height: 330px;
+  height: 320px;
   background-color: var(--background);
   margin: 20px 40px;
   overflow: hidden;
@@ -168,10 +168,13 @@ nav img {
 .hero-content .section-2 .box .circle img,
 .hero-content .section-2 .box img {
   position: absolute;
-  top: 0.2rem;
+  /* top: 1rem; */
+  top: var(--img-position);
   left: 50%;
   transform: translateX(-50%);
   height: var(--img-height);
+  /* filter: brightness(0.9);   */
+  filter: grayscale(50%);
 }
 
 #section-about {
@@ -459,10 +462,10 @@ nav img {
         position: absolute;
         height: 100%;
         /* top: 0; */
-        bottom: 14px;
+        /* bottom: 14px; */
         left: 50%;
-        /* align-items: center; */
-        align-items: end;
+        align-items: center;
+        /* align-items: end; */
         transform: translateX(-50%);
         cursor: pointer;
         /* transition: all 3s ease-in; */
@@ -520,14 +523,18 @@ nav img {
     /* margin-right: auto;
     margin-left: 0; */
   }
-  .nav .nav__link a:hover {
+  .nav .nav__link:hover {
     background-color: var(--secondary-text);
     color: var(--background);
     transition: 0.4s ease;
   }
-  .nav .nav__link a:hover::after {
+
+  .nav a:hover::after {
     width: 0;
   }
+  /* .nav a .logo:hover {
+    background-color: none;
+  } */
   .open-sidebar-button {
     display: block;
     /* padding: 0 2rem; */
@@ -553,7 +560,9 @@ nav img {
     left: 0;
     z-index: 999;
   }
-
+  .nav #theme-toogle {
+    margin: 10px auto;
+  }
   /* hero section */
   .header .hero-content {
     place-content: center;

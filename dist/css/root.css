@@ -21,7 +21,8 @@
   /* images */
   --box-width: 250px;
   --box-height: 250px;
-  --img-height: 330px;
+  --img-height: 280px;
+  --img-position: 2.5rem;
   /* animations */
   --shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 }

@@ -10,7 +10,7 @@ themeToggle.onclick = function () {
   if (document.body.classList.contains("dark-theme")) {
     themeToggle.src = "./assets/sun-svgrepo-com.svg";
   } else {
-    themeToggle.src = "./assets/moon-svgrepo-com.svg";
+    themeToggle.src = "./assets/moon-svgrepo-com-2.svg";
   }
 };
 

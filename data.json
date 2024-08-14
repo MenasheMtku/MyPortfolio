@@ -15,6 +15,14 @@
       "codeUrl": "https://github.com/MenasheMtku/rgb-color-game",
       "image": "dist/img/rgb_color_game.png",
       "siteUrl": "https://rgb-color-dcc2b8.netlify.app/"
+    },
+    {
+      "id": 3,
+      "title": "Tic-Tac-Toe",
+      "description": "A classic example of how to use components, state management, and event handling in a React application",
+      "codeUrl": "https://github.com/MenasheMtku/tic-tac-toe/",
+      "image": "dist/img/tic.png",
+      "siteUrl": "https://hex-igul.netlify.app/"
     }
   ],
   "skills": [

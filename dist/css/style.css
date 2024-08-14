@@ -129,6 +129,7 @@ nav img {
   background-color: var(--background);
   margin: 20px 40px;
   overflow: hidden;
+  /* transition: background-color 0s; */
 }
 
 .hero-content .section-2 .box::before {
@@ -269,7 +270,7 @@ nav img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  grid-gap: 1rem;
+  gap: 1rem;
   padding: 1rem;
   margin: 0 auto;
 }

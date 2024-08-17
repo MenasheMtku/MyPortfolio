@@ -42,7 +42,7 @@ projects.forEach(project => {
                     >Visit Website</a
                   >
                     <a href="${project.codeUrl}" target="_blank">
-                    <img class="github-svg-link" src = "./assets/skillsLogos/github-svgrepo-com.svg" alt="project_github_link"/>
+                     <i class="fa-brands fa-square-github"></i>
                   </a>
                 </div>
               </div>

@@ -2,6 +2,7 @@
 
 :root {
   /* --logo-width: 80px; */
+  --font-family: "Poppins", sans-serif;
   /* Social Network */
   --facebook: #3b5998;
   --github: #1d1a1a;
@@ -11,10 +12,7 @@
   --nav-height: 5rem;
   --nav-margin: 1.5rem;
   /* images */
-  --box-width: 250px;
-  --box-height: 250px;
-  --img-height: 280px;
-  --img-position: 2.5rem;
+  --img-width: 280px;
   /* animations */
   --shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   --shadow-1: 0 2px 5px rgba(0, 0, 0, 0.9);
@@ -75,12 +73,12 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   background-color: var(--background);
   color: var(--primary-text);
   line-height: 1.6;
   min-height: 100%;
-  transition: var(--primary-text) var(--accent-color) 0.5s;
+  transition: all 0.4s;
   /* padding-top: var(--nav-height); */
   /* width: var(--max-width); */
 }
@@ -120,6 +118,8 @@ section:last-of-type {
 }
 
 .call-to-action {
+  border: 0;
+  font-family: var(--font-family);
   background-color: var(--call-to-action);
   transition: all 0.3s;
   border-radius: 8px;

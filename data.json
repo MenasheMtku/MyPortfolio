@@ -3,17 +3,17 @@
     {
       "id": 1,
       "title": "Movie App",
-      "description": "Explore new movies and tv shows, cast members and watch the trailer",
+      "description": "Explore new movies and TV shows, cast members and watch the trailer",
       "codeUrl": "https://github.com/MenasheMtku/movie-app-react",
-      "image": "dist/img/movieAppImg.png",
+      "image": "assets/images/movieAppImg.png",
       "siteUrl": "https://trailersphere.netlify.app/"
     },
     {
       "id": 2,
       "title": "RGB Color Game",
-      "description": "Guess the correct color in the board which is corresponds to the RGB phrase",
+      "description": "Guess the correct color in the board which corresponds to the RGB phrase",
       "codeUrl": "https://github.com/MenasheMtku/rgb-color-game",
-      "image": "dist/img/rgb_color_game.png",
+      "image": "assets/images/rgb_color_game.png",
       "siteUrl": "https://rgb-color-dcc2b8.netlify.app/"
     },
     {
@@ -21,40 +21,64 @@
       "title": "Tic-Tac-Toe",
       "description": "A classic example of how to use components, state management, and event handling in a React application",
       "codeUrl": "https://github.com/MenasheMtku/tic-tac-toe/",
-      "image": "dist/img/tic.png",
+      "image": "assets/images/tic.png",
       "siteUrl": "https://hex-igul.netlify.app/"
     }
   ],
   "skills": [
     {
-      "title": "HTML",
-      "image": "./assets/skillsLogos/html-5_logo.svg",
-      "alt": "html5"
+      "title": "Salesforce",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/salesforce/salesforce-original.svg",
+      "alt": "Salesforce"
     },
     {
-      "title": "CSS",
-      "image": "./assets/skillsLogos/css-3_logo.svg",
-      "alt": "css"
-    },
-    {
-      "title": "Javascript",
-      "image": "./assets/skillsLogos/javascript_logo.svg",
-      "alt": "javascript"
+      "title": "JavaScript",
+      "image": "./assets/skills/javascript_logo.svg",
+      "alt": "JavaScript"
     },
     {
       "title": "React",
-      "image": "./assets/skillsLogos/react_logo.svg",
-      "alt": "react"
+      "image": "./assets/skills/react_logo.svg",
+      "alt": "React"
     },
     {
-      "title": "TailwindCSS",
-      "image": "./assets/skillsLogos/tailwind-css_logo.svg",
-      "alt": "tailwind css"
+      "title": "Next.js",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "alt": "Next.js"
     },
     {
-      "title": "git",
-      "image": "./assets/skillsLogos/git-logo.svg",
-      "alt": "git"
+      "title": "TypeScript",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "alt": "TypeScript"
+    },
+    {
+      "title": "Tailwind",
+      "image": "./assets/skills/tailwind-css_logo.svg",
+      "alt": "Tailwind CSS"
+    },
+    {
+      "title": "HTML",
+      "image": "./assets/skills/html-5_logo.svg",
+      "alt": "HTML5"
+    },
+    {
+      "title": "CSS",
+      "image": "./assets/skills/css-3_logo.svg",
+      "alt": "CSS3"
+    },
+    {
+      "title": "Git",
+      "image": "./assets/skills/git-logo.svg",
+      "alt": "Git"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Salesforce Certified Administrator",
+      "issuer": "Salesforce",
+      "year": "2025",
+      "icon": "fa-brands fa-salesforce",
+      "credentialUrl": ""
     }
   ]
 }
